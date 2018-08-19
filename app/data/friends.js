@@ -13,6 +13,32 @@ var friends =  {
         5,
         4,
         1
+      ],"name":"Alpo",
+      "photo":"https://www.google.com/search?q=paid+in+full+characters&rlz=1C5CHFA_enUS800US801&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj9rq3s4vfcAhVnCDQIHeKyAGEQ_AUICygC&biw=1432&bih=758#imgrc=JsdakitY066FoM:",
+      "scores":[
+          2,
+          5,
+          4,
+          1,
+          2,
+          5,
+          2,
+          5,
+          4,
+          4
+      ], "name":"Mitch",
+      "photo":"https://www.google.com/search?q=paid+in+full+characters&rlz=1C5CHFA_enUS800US801&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj9rq3s4vfcAhVnCDQIHeKyAGEQ_AUICygC&biw=1432&bih=758#imgrc=xlUXE4tvRIUfrM:",
+      "scores":[
+          2,
+          5,
+          1,
+          4,
+          2,
+          5,
+          2,
+          5,
+          2,
+          1
       ]
   }
 

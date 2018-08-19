@@ -13,10 +13,29 @@
 </head>
 
 <body>
+<style>
 
+body{
+
+background-color: antiquewhite;
+
+
+}
+span.glyphicon.glyphicon-pencil {
+    color: aliceblue;
+}h1.text-center {
+    font-family: serif;
+}h2.text-center {
+    color: white;
+    font-family: serif;
+} 
+
+
+
+</style>
   <div class="container">
 
-    <div class="jumbotron" style="background-color: rgb(133, 238, 210,0.2)">
+    <div class="jumbotron" style="background-color: lightcoral">
       <h1 class="text-center">
         <span class="glyphicon glyphicon-pencil"></span> Survey Questions</h1>
       <h2 class="text-center">Answer each question on a scale of 1-5</h2>
@@ -29,7 +48,7 @@
 
         <!-- Survey Page -->
         <div class="panel panel-default">
-          <div class="panel-heading" style="background-color: rgb(133, 238, 210);">
+          <div class="panel-heading" style="background-color: lightcoral;">
             <h4 class="panel-title" style="font-weight: bold">About You</h4>
           </div>
           <div class="panel-body">
@@ -50,7 +69,7 @@
               <h4>
                 <strong>Question 1</strong>
               </h4>
-              <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+              <p>You Value Loyalty Over Money.</p>
               <select data-placeholder class="chosen-select" id="q1">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -67,7 +86,7 @@
               <h4>
                 <strong>Question 2</strong>
               </h4>
-              <p>Generally speaking, you rely more on your experience than your imagination.</p>
+              <p>You dont need attention even when you deserve it.</p>
               <select data-placeholder class="chosen-select" id="q2">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -84,7 +103,7 @@
               <h4>
                 <strong>Question 3</strong>
               </h4>
-              <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+              <p>You work best under pressure.</p>
               <select data-placeholder class="chosen-select" id="q3">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -101,7 +120,7 @@
               <h4>
                 <strong>Question 4</strong>
               </h4>
-              <p>You rarely do something just out of sheer curiosity.</p>
+              <p>You Dont follow trends you make them.</p>
               <select data-placeholder class="chosen-select" id="q4">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -118,7 +137,7 @@
               <h4>
                 <strong>Question 5</strong>
               </h4>
-              <p>People can rarely upset you.</p>
+              <p>People must earn your trust.</p>
               <select data-placeholder class="chosen-select" id="q5">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -135,7 +154,7 @@
               <h4>
                 <strong>Question 6</strong>
               </h4>
-              <p>It is often difficult for you to relate to other people’s feelings.</p>
+              <p>It is often diffcult for a person to gain back your trust once broken.</p>
               <select data-placeholder class="chosen-select" id="q6">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -203,7 +222,7 @@
               <h4>
                 <strong>Question 10</strong>
               </h4>
-              <p>You feel more energetic after spending time with a group of people.</p>
+              <p>You feel less energetic after spending time with a group of people.</p>
               <select data-placeholder class="chosen-select" id="q10">
                 <option value=" ">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -291,7 +310,7 @@
       });
       console.log(newFriend);
       // posts new friend data to api/friends
-      $.post("/api/friends", newFriend, function (data) {
+      $.post("/api/friends.js", newFriend, function (data) {
         console.log(data);
         // sets name and photo of best match to matchModal
         $("#matchName").text(data.name);
